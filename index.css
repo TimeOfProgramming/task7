@@ -1,0 +1,47 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  grid-template-rows: repeat(4, 100px); /* 4 rows of 100px height */
+  gap: 10px; /* Gap between grid items */
+  padding: 20px;
+  border: 2px solid #3498db;
+}
+
+/* Grid items */
+.grid-item {
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+/* Specific styles for items */
+.item1 {
+  grid-column: span 2; /* Span across 2 columns */
+}
+
+.item2 {
+  grid-row: span 2; /* Span across 2 rows */
+}
+
+.item3 {
+  grid-column: 3 / 5; /* From column 3 to 4 */
+}
+
+.item4 {
+  grid-row: 3 / 5; /* From row 3 to 4 */
+}
